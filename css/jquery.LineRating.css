@@ -1,0 +1,33 @@
+.rating-view{
+	width: 250px;
+	background: url("images/bgr-rating-ru.png") no-repeat;
+}
+.current-rating, .voite-rating, .hidden-voice, .empty-voice{
+	width: 180px;
+	height: 10px;
+	margin-left: 56px;
+}
+.inner-rating{
+	margin-top: 1px;
+}
+.inner-rating, .rating-voice, .hidden-voice, .empty-voice{
+	background: url("images/bgr-rating-green.png") repeat-x scroll 0% 0% transparent;
+	height: 10px;
+	margin-left: 10px;
+}
+.voite-rating{
+	height: 30px;
+}
+.rating-voice{
+	background: url("images/bgr-rating-yellow.png") repeat-x scroll 0% 0% transparent;
+	margin-top: -11px;
+}
+.hidden-voice, .empty-voice{
+	background: transparent;
+	margin-top: 2px;
+	z-index: 666;
+}
+
+.save-rating{
+	background: url("images/bgr-rating-orange.png") repeat-x scroll 0% 0% transparent;
+}

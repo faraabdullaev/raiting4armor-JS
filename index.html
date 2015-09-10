@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<script type="text/javascript" src="jquery/jquery.js"></script>
+		<script type="text/javascript" src="jquery/jquery.LineRating.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.LineRating.css">
+		<script>
+			$(document).ready(function () {
+				$('.voite-rating').LineRating();
+
+				$('.empty-voice').on('click', function(){
+					alert('Для выполнения этого действия требуется аторизироваться в системе.');
+				});
+			});
+		</script>
+		<style>
+			body {
+				background: #fcf;
+			}
+			.rating-view {
+				margin: 10% auto;
+			}
+		</style>
+	</head>
+	<body>
+	
+	<div class="rating-view">
+		<div class="current-rating">
+			<div class="inner-rating" style="width: 75%"></div>
+		</div>
+		<div class="voite-rating">
+				<input id="isVoice" value="none" type="hidden" />
+				<div class="hidden-voice empty-voice"></div>
+				<div class="rating-voice save-rating" style="width:0%;"></div>
+		</div>
+	</div>
+	
+	</body>
+</html>
